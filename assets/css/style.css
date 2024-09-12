@@ -1,0 +1,381 @@
+/* ========== Fonts ========== */
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+/* ========== General Styling ========== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto-regular";
+}
+
+body {
+    max-width: 144rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 30rem;
+}
+
+/* ========== Typographgy ========== */
+
+.logo-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    color: #0B0C17;
+}
+
+.logo-text span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.44rem;
+    color: #0B0C17;
+}
+
+h1 {
+    font-family: "Roboto-bold";
+    font-size: 5.4rem;
+    font-weight: 600;
+    line-height: 6.48rem;
+    color: #0B0C17;
+}
+
+p {
+    font-family: "Roboto-light";
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+    color: #000;
+}
+
+.second-section-text a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.641rem;
+    color: #FF3571;
+}
+
+h2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 4.56rem;
+}
+
+.every-idea p {
+    font-weight: 300;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-size: 1.872rem;
+    font-weight: 700;
+    line-height: 2.194rem;
+}
+
+.idea-articles p {
+    line-height: 2.8rem;
+}
+
+.are-you-ready h2, .subscribe h2  {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 3.36rem;
+}
+
+.are-you-ready p, .subscribe p {
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+}
+
+.description-p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
+
+/* ========== Header ========== */
+
+header {
+    padding: 3rem;
+    align-self: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    width: 30rem;
+}
+
+.logo-text {
+    flex-direction: column;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* ========== Main ========== */
+
+.img-box {
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+}
+.ilustracion-1 {
+    width: 69rem;
+    height: 60rem;
+    top: 0;
+    left: 0rem;
+}
+
+.ilustracion-people {
+    width: 50rem;
+    height: 50rem;
+    top: -51rem;
+    left: 12rem;
+    animation: float 2.5s infinite ease-in-out;
+}
+
+/* .ilustracion-people img {
+    animation: float 1s linear infinite alternate;
+} */
+
+/* ========== Animation ========== */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.second-section-text {
+    width: 50rem;
+    margin-left: 14.4rem;
+}
+
+.p-rocket {
+    display: inline-block;
+}
+
+.rocket {
+    width: 3.2rem;
+    height: 2.8rem;
+}
+
+.second-section-text a {
+    display: block;
+    margin-top: 5.6rem;
+}
+
+.images {
+    margin-top: 15rem;
+}
+
+.idea-section {
+    flex-direction: column;
+    margin: 31.4rem 0 0 15.5rem;
+}
+
+/* .idea-section h2 {
+    display: inline-block;
+} */
+
+.idea-section h2:nth-of-type(2) {
+    display: block;
+    width: 21,1rem;
+}
+
+.idea {
+    width: 6rem;
+    height: 6.2rem;
+    top: -3rem;
+}
+
+.every-idea {
+    justify-content: space-between;
+    padding-right: 29.7rem;
+    gap: 17rem;
+}
+
+.every-idea p {
+    width: 59.8rem;
+    text-align: justify;
+}
+
+.idea-report {
+    width: 64.3rem;
+    margin: 10.718rem 0 19.331rem 7rem;
+}
+
+.idea-articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    padding: 0 30rem 0 6rem;
+}
+
+.idea-articles .img-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    top: 2rem;
+    left: -5rem;
+}
+
+/* .idea-icon, .heart-icon {
+    top: 2rem;
+    left: -5rem;
+} */
+
+.idea-articles p {
+    width: 30rem;
+    padding-top: 1rem;
+}
+
+.are-you-ready {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.383rem;
+    margin: 25.3rem 0 15rem 0;
+    width: 100%;
+}
+
+.are-you-ready p {
+    width: 40rem;
+}
+
+.challenge {
+    flex-direction: column;
+    gap: 15rem;
+    margin: 0 14.4rem;
+}
+
+.challenge article {
+    gap: 20rem;
+}
+
+.challenge .img-box {
+    width: 50rem;
+    height: 40.5rem;
+}
+
+.description {
+    width: 57.6rem;
+}
+
+.description .img-box {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.challenge-number {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.094rem;
+    color: #DDDDDD;
+    margin-bottom: 4.316rem;
+}
+
+.description h3 {
+    margin: 2.271rem 0 1.872rem 0;
+}
+
+.subscribe {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe p {
+    width: 34rem;
+    margin: 2.383rem 0 4.999rem 0;
+}
+
+.subscribe input {
+    border: none;
+}
+
+.email {
+    text-align: center;
+    display: block;
+    background-color: #FFF;
+    width: 65.6rem;
+    height: 8.6rem;
+    margin: 2.9rem 0.3rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.76rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px outset red;
+    /* border-style: outset; */
+}
+
+.button-sub {
+    background-color: #FF3571;
+    color: #FFF;
+    padding: 2rem 8rem;
+    font-size: 1.92rem;
+    font-weight: 400;
+    line-height: 2.208rem;
+    text-align: center;
+}
+
+.button-sub:hover {
+    background-image: linear-gradient(to right, #FF3571, #ff35e7, #5a35ff);
+    cursor: pointer;
+}
+
+
+/* ========== Footer ========== */
+
+footer {
+    margin: 15rem 0 1rem 13rem;
+    gap: 1.3rem;
+}
+
+footer p {
+    line-height: 2.7rem;
+}
+
+footer img {
+    width: 2.8rem;
+    height: 2.4rem;
+}
